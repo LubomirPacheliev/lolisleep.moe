@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react"
-import laffey from "../lolisleep/images/laffeychibi.png"
-import logo2 from "../lolisleep/icons/logo2.png"
-import logo2Hover from "../lolisleep/icons/logo2-hover.png"
+import laffey from "../assets/images/laffeychibi.png"
+import logo2 from "../assets/icons/logo2.png"
+import logo2Hover from "../assets/icons/logo2-hover.png"
 import "../styles/footer.less"
 
 interface Props {

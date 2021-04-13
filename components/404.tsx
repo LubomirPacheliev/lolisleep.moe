@@ -1,5 +1,5 @@
 import React, {useEffect} from "react"
-import img404 from "../lolisleep/images/404.png"
+import img404 from "../assets/images/404.png"
 import NavBar from "./NavBar"
 import Footer from "./Footer"
 import "../styles/404.less"

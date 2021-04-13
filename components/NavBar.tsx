@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from "react"
-import favicon from "../lolisleep/icons/favicon.png"
-import logo from "../lolisleep/icons/logo.png"
-import logoHover from "../lolisleep/icons/logo-hover.png"
+import React, {useState} from "react"
+import favicon from "../assets/icons/favicon.png"
+import logo from "../assets/icons/logo.png"
+import logoHover from "../assets/icons/logo-hover.png"
 import "../styles/navbar.less"
 
 const NavBar: React.FunctionComponent = (props) => {
