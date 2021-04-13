@@ -34,9 +34,9 @@ if (process.env.TESTING === "yes") {
 }
 
 app.use(express.static(path.join(__dirname, "./public")))
-app.use(express.static(path.join(__dirname, "./lolisleep")))
+app.use(express.static(path.join(__dirname, "./assets")))
 app.use(express.static(path.join(__dirname, "./dist"), {index: false}))
-app.use(favicon(__dirname + "/lolisleep/icons/favicon.png"))
+app.use(favicon(__dirname + "/assets/icons/favicon.png"))
 
 app.get("*", function(req, res) {
   if (req.hostname.includes("herokuapp")) {
