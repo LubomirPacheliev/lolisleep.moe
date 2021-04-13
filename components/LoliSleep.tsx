@@ -13,7 +13,6 @@ import loli3 from "../lolisleep/images/loli3.jpg"
 import loliBreathingTrack from "../lolisleep/lolibreathing.mp3"
 import loliMoaningTrack from "../lolisleep/lolimoaning.mp3"
 import loliSoundsTrack from "../lolisleep/lolisounds.mp3"
-import silence from "../lolisleep/silence.mp3"
 import "../styles/lolisleep.less"
 
 const images = [loli1, loli2, loli3]
