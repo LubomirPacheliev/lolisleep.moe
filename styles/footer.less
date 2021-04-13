@@ -1,0 +1,93 @@
+@import "../index.less";
+
+.footer {
+    background-color: #ffcce8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 25px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.footer-logo {
+    user-select: none;
+    max-width: 80%;
+    height: auto;
+}
+
+.laffey {
+    margin-right: 50px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    &:active {
+        filter: brightness(110%);
+    }
+}
+
+.footer-text {
+    margin-top: 5px;
+    font-family: "Skranji", sans-serif;
+    font-size: 25px;
+    color: #ff9bed;
+    cursor: text;
+}
+
+.active:active {
+    color: white;
+}
+
+.footer-text-small {
+    .footer-text();
+    font-size: 20px;
+}
+
+@media screen and (max-width: 65rem) {
+    .footer-text {
+        font-size: 20px;
+    }
+    
+    .footer-text-small {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 45rem) {
+    .footer-column {
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+    
+    .laffey { 
+        margin-right: 10px;
+        max-width: 40%;
+        width: auto;
+        height: auto;
+    }
+
+    .footer-logo {
+        max-width: 70%;
+    }
+    
+}
+
+@media screen and (max-width: 30rem) {
+    .footer-text {
+        font-size: 10px;
+    }
+    
+    .footer-text-small {
+        font-size: 8px;
+    }
+
+    .laffey { 
+        max-width: 30%;
+    }
+}

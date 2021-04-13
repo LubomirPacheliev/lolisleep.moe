@@ -1,0 +1,92 @@
+@import "../index.less";
+
+.lolisleep {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.loli-img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.loli-image {
+    user-select: none;
+    max-width: 80%;
+    max-height: 40%;
+    height: auto;
+}
+
+.loli-text {
+    font-family: "Skranji", sans-serif;
+    font-size: 60px;
+    color: #ffcdfa;
+    cursor: text;
+}
+
+.loli-checkmarks {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.loli-checkmark {
+    cursor: pointer;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.progress-container {
+    display: flex;
+    justify-content: center;
+}
+
+progress {
+    width: 75%;
+    height: 15px;
+    border-radius: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    -webkit-appearance: none;
+    &::-webkit-progress-value {
+        background-color: #ff70ff;
+    }
+    &::-webkit-progress-bar {
+        background-color: #be7eae;
+    }
+}
+
+@media screen and (max-width: 65rem) {
+    .loli-text {
+        font-size: 40px;
+    }
+
+    .loli-checkmark {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 45rem) {
+    .loli-checkmarks {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .loli-checkmark {
+        margin-top: 20px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+
+@media screen and (max-width: 30rem) {
+    .loli-text {
+        font-size: 30px;
+    }
+}
