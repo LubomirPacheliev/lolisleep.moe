@@ -11,16 +11,14 @@ import sexNoises2 from "../assets/icons/sexnoises2.png"
 import sexNoises2Checked from "../assets/icons/sexnoises2-checked.png"
 import loli1 from "../assets/images/loli1.png"
 import loli2 from "../assets/images/loli2.jpg"
-import loli3 from "../assets/images/loli3.png"
-import loli4 from "../assets/images/loli4.jpg"
-import loli5 from "../assets/images/loli5.jpg"
+import loli3 from "../assets/images/loli3.jpg"
 import loliBreathingTrack from "../assets/lolibreathing.mp3"
 import loliMoaningTrack from "../assets/lolimoaning.mp3"
 import loliSoundsTrack from "../assets/lolisounds.mp3"
 import loliSounds2Track from "../assets/lolisounds2.mp3"
 import "../styles/lolisleep.less"
 
-const images = [loli1, loli2, loli3, loli4, loli5]
+const images = [loli1, loli2, loli3]
 
 const LoliSleep: React.FunctionComponent = (props) => {
     const progressBar = useRef(null) as React.RefObject<HTMLProgressElement>
