@@ -7,15 +7,24 @@ import softMoaning from "../assets/icons/softmoaning.png"
 import softMoaningChecked from "../assets/icons/softmoaning-checked.png"
 import sexNoises from "../assets/icons/sexnoises.png"
 import sexNoisesChecked from "../assets/icons/sexnoises-checked.png"
+import sexNoises2 from "../assets/icons/sexnoises2.png"
+import sexNoises2Checked from "../assets/icons/sexnoises2-checked.png"
 import loli1 from "../assets/images/loli1.png"
 import loli2 from "../assets/images/loli2.png"
 import loli3 from "../assets/images/loli3.jpg"
+import loli4 from "../assets/images/loli4.jpg"
+import loli5 from "../assets/images/loli5.jpg"
+import loli6 from "../assets/images/loli6.jpg"
+import loli7 from "../assets/images/loli7.jpg"
+import loli8 from "../assets/images/loli8.jpg"
+import loli9 from "../assets/images/loli9.jpg"
 import loliBreathingTrack from "../assets/lolibreathing.mp3"
 import loliMoaningTrack from "../assets/lolimoaning.mp3"
 import loliSoundsTrack from "../assets/lolisounds.mp3"
+import loliSounds2Track from "../assets/lolisounds2.mp3"
 import "../styles/lolisleep.less"
 
-const images = [loli1, loli2, loli3]
+const images = [loli1, loli2, loli3, loli4, loli5, loli6, loli7, loli8, loli9]
 
 const LoliSleep: React.FunctionComponent = (props) => {
     const progressBar = useRef(null) as React.RefObject<HTMLProgressElement>
@@ -42,6 +51,7 @@ const LoliSleep: React.FunctionComponent = (props) => {
         if (track === "soft-breathing") return loliBreathingTrack
         if (track === "soft-moaning") return loliMoaningTrack
         if (track === "sex-noises") return loliSoundsTrack
+        if (track === "sex-noises2") return loliSounds2Track
         return ""
     }
 
@@ -81,6 +91,7 @@ const LoliSleep: React.FunctionComponent = (props) => {
                 <img className="loli-checkmark" src={track === "soft-breathing" ? softBreathingChecked : softBreathing} width="207" height="36" onClick={() => changeTrack("soft-breathing")}/>
                 <img className="loli-checkmark" src={track === "soft-moaning" ? softMoaningChecked : softMoaning} width="207" height="36" onClick={() => changeTrack("soft-moaning")}/>
                 <img className="loli-checkmark" src={track === "sex-noises" ? sexNoisesChecked : sexNoises} width="207" height="36" onClick={() => changeTrack("sex-noises")}/>
+                <img className="loli-checkmark" src={track === "sex-noises2" ? sexNoises2Checked : sexNoises2} width="207" height="36" onClick={() => changeTrack("sex-noises2")}/>
             </div>
             <audio id="loli-audio" src={getTrack()} loop></audio>
             <div className="progress-container">
