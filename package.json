@@ -12,7 +12,7 @@
     "clean": "del-cli ./dist"
   },
   "keywords": ["loli", "sleep", "lolisleep.moe"],
-  "author": "Tenpi",
+  "author": "Pripy",
   "license": "MIT",
   "devDependencies": {
     "@tenpi/tslint": "^1.1.0",
